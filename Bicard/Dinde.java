@@ -12,4 +12,9 @@ public class Dinde extends Surgele{
     public float prix() {
         return poid * PUD;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s %dkg","Dinde",poid);
+    }
 }

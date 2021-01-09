@@ -14,4 +14,8 @@ public class BoiteChocolat extends Produit{
         return nombreDeChocolat * PUB;
     }
 
+    @Override
+    public String toString() {
+        return String.format("%s (%d))","Boite chocolat",nombreDeChocolat);
+    }
 }

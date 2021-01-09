@@ -25,4 +25,9 @@ public class Saumon extends Surgele{
     public enum Origine{
         ALASKA, ATLANTIQUE, NORVEGE, ELEVAGE;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s %s %dkg","Saumon",origine,poid);
+    }
 }
