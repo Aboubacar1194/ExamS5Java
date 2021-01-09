@@ -1,5 +1,8 @@
 package main;
 
+import Bicard.BoiteChocolat;
+import Bicard.Saumon;
+
 public class Test {
 
     private static void erreur(){
