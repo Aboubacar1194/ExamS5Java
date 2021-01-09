@@ -1,12 +1,11 @@
 package Bicard;
 
-public class Saumon extends Produit{
+public class Saumon extends Surgele{
 
-    private float poid = 0;
     private Origine origine = null;
 
     public Saumon(Origine origine,float poid) {
-        this.poid = poid;
+        super(poid);
         this.origine = origine;
     }
 
