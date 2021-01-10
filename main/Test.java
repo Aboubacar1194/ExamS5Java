@@ -1,7 +1,5 @@
 package main;
 
-import Bicard.BoiteChocolat;
-import Bicard.Dinde;
 import Bicard.EPanier;
 import Bicard.Saumon;
 
