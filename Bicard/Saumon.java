@@ -14,10 +14,10 @@ public class Saumon extends Surgele{
 
         float prix = 0;
         switch (origine){
-            case ALASKA : prix = poid * 45;
-            case ELEVAGE : prix = poid * 35;
-            case ATLANTIQUE : prix = poid * 40;
-            case NORVEGE : prix = poid * 38;
+            case ALASKA -> prix = poid * 45;
+            case ELEVAGE -> prix = poid * 35;
+            case ATLANTIQUE -> prix = poid * 40;
+            case NORVEGE -> prix = poid * 38;
         }
         return prix;
     }
@@ -28,6 +28,6 @@ public class Saumon extends Surgele{
 
     @Override
     public String toString() {
-        return String.format("%s %s %dkg","Saumon",origine,poid);
+        return "Saumon "+origine+" "+poid+"kg";
     }
 }

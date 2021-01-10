@@ -5,7 +5,7 @@ import java.util.List;
 
 public class EPanier {
 
-    private List<Produit> liste;
+    public List<Produit> liste;
 
     public EPanier() {
         this.liste = new ArrayList<>();
@@ -31,10 +31,12 @@ public class EPanier {
     @Override
     public String toString() {
 
-        String chaine = "";
+        StringBuilder chaine = new StringBuilder();
+        chaine.append("[\n");
         for (Produit element : liste) {
-            chaine += element.toString()+"\n";
+            chaine.append(element.toString()).append("\n");
         }
-        return "[\n"+chaine+"]";
+        chaine.append("]");
+        return chaine.toString();
     }
 }

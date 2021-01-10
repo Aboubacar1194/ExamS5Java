@@ -2,10 +2,10 @@ package Bicard;
 
 public class BoiteChocolat extends Produit{
 
-    private float nombreDeChocolat = 0;
+    private int nombreDeChocolat = 0;
     private final float PUB = 0.5f;
 
-    public BoiteChocolat(float nombreDeChocolat) {
+    public BoiteChocolat(int nombreDeChocolat) {
         this.nombreDeChocolat = nombreDeChocolat;
     }
 
@@ -16,6 +16,6 @@ public class BoiteChocolat extends Produit{
 
     @Override
     public String toString() {
-        return String.format("%s (%d))","Boite chocolat",nombreDeChocolat);
+        return "Boite chocolat ("+nombreDeChocolat+")";
     }
 }

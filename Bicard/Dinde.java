@@ -15,6 +15,6 @@ public class Dinde extends Surgele{
 
     @Override
     public String toString() {
-        return String.format("%s %dkg","Dinde",poid);
+        return String.format("Dinde "+poid+"kg");
     }
 }
